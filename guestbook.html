@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Guestbook :: Lain's CyberNook</title>
+<style>
+  body { background:#111; color:#afa; font-family:"Times New Roman",Times,serif; margin:0; padding:20px; }
+  .container { max-width:600px; margin:auto; border:1px solid #afa; padding:20px; background:#050; }
+  input, textarea { width:100%; margin:5px 0; background:#000; color:#afa; border:1px solid #afa; }
+  a { color:#0ff; }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>✍️ Guestbook</h1>
+    <p><a href="index.html">← Home</a></p>
+
+    <p><i>Sign your name, leave a thought, or report a glitch. This is a static page; your message would be lost in the void (for now). Consider it a digital wishing well.</i></p>
+
+    <form onsubmit="event.preventDefault(); alert('This is a placeholder. In a real site, this would POST to a server.');">
+      <p>Name:</p>
+      <input type="text" name="name" placeholder="Who are you?">
+      <p>Message:</p>
+      <textarea rows="4" placeholder="What brings you to the Wired?"></textarea>
+      <br>
+      <button type="submit">Sign</button>
+    </form>
+
+    <hr>
+    <h3>Recent Visitors (Fake)</h3>
+    <ul>
+      <li><b>Neo</b> — "I'm trying to free your mind, Lain." — 2026-03-22</li>
+      <li><b>MysteryNet</b> — "Nice retro vibes." — 2026-03-21</li>
+    </ul>
+  </div>
+</body>
+</html>
